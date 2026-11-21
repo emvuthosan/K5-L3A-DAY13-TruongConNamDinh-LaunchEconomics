@@ -63,11 +63,20 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Đóng góp cụ thể
 
--
+- `src/lab13.py` A1: ba hàm, ba phép thử đáp án biết trước ĐẠT (1,20 · 1,25 · 1,25).
+- A2–A4: `mo_hinh` cho chi phí mỗi việc thành công 4.472 đ [simulated]; tách theo loại (quoc_te 1,88×); cộng chi phí cố định cho phạm vi noi_dia + hang_nang còn 4.599 đ = 0,38× [simulated].
+- B1–B4: 9 kịch bản độ nhạy, cặp B2, giới hạn 1/2/3 lần chạy, xem lại 100% (0,98×, 1,03× với 15,3 phút làm lại) [simulated].
+- `pilot_plan.yaml`: chú thích D1, D2; chia theo nhân viên 20 + 20, mde 6 điểm; ba luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ.
+- E2 trong `chi_so.md`: ba dòng rủi ro kinh tế lấy số từ bảng độ nhạy.
+- `bang_loi.md`: gắn nhãn người 2 độc lập; điền bảng khắc phục 5 ca (1, 20, 18, 13, 17), mỗi dòng có event, ngưỡng, vai trò phụ trách.
+- `group_report.md`: viết mục 1–8, cập nhật mục C và đồng thuận 17/20 = 85%.
+- `phieu_cham.md`: dựng khung chấm và checklist số tham chiếu; điểm và quyết định chờ buổi duyệt chéo 17:00.
 
 ### Bằng chứng
 
--
+- Commit `a219bd2` (A, B, `pilot_plan.yaml`, E2, `group_report.md`; merge qua PR #2), `7fb7738` (nhãn người 2), `ba7b20d` (bảng khắc phục, cập nhật `group_report.md`).
+- Báo cáo cá nhân: `report/team/2A202603699_NguyenLeHaiNam.md`.
+
 
 ## DaoTruongVu-2A202603721
 
