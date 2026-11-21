@@ -80,9 +80,13 @@ Sao chép mục dưới đây cho từng thành viên.
 - Tính độc lập A1–A4, B1–B4 bằng `src/kiem_so_vu.py`, đối chiếu với `mo_hinh` của Nam: trùng mọi dòng (chi phí mỗi việc thành công 4.472 đ, gấp 16,3 lần hoá đơn [simulated]); điền toàn bộ `bang_chi_phi.md`.
 - Viết `co_mau`, `he_so_thiet_ke`, `nhiem_vu_d1`, `nhiem_vu_e1` trong `src/lab13.py`: D1 ra 1.251 · 3.103 · 1.000 · 300 · m ≥ 299, power 0,64 ở mức 5 điểm; E1 ra 82,83% · 27,12% · 4,25%.
 - Viết bảng chỉ số E1, 11 event có `trace_id` và kiểm tra chéo chỉ số ↔ event trong `chi_so.md`; duyệt số trong `group_report.md`, `phieu_cham.md` và event của bảng khắc phục trong `bang_loi.md`.
-- Chia việc cho nhóm 3 người (`PHAN_CONG.md`); gộp xung đột khi merge phần A/B của Nam với D1/E1.
+- Chia việc cho nhóm 3 người (`PHAN_CONG.md`); gộp xung đột khi merge phần A/B của Nam với D1/E1, và khi merge phần của Hoàng (PR #6) vào nhánh `vu`.
+- Thêm event `input_validation_failed`, thuộc tính `request_id` cho `refund_ledger_write` và `chu_de` cho `refund_request_created`, để cả 5 cách phát hiện lỗi trong `bang_loi.md` đo được từ danh sách event.
+- Soát cuối: `python lab13.py` chạy hết, ba phép thử ĐẠT; `pilot_plan.yaml` đọc được bằng `yaml.safe_load`, không còn dấu `?`; không có từ cấm ở quy tắc 5 trong `report/team/`.
 
 ### Bằng chứng
 
 - Nhánh `vu`, PR #3: commit `5812a5b`, `ee0a0fd`, `1d60cfe`, `ee80baf`; PR #1: commit `d6b63a0` (`PHAN_CONG.md`).
+- Nhánh `vu`, sau PR #3: commit `75f4189` (duyệt số và event, thêm `input_validation_failed`), `ed68531` (merge PR #6 của Hoàng), `bc912ae` (bỏ mục lặp trong `TEAM.md`).
+- File: `src/kiem_so_vu.py`, `report/team/bang_chi_phi.md`, `report/team/chi_so.md`, phần D1/E1 trong `src/lab13.py`, `PHAN_CONG.md`.
 - Báo cáo cá nhân: `report/team/2A202603721_DaoTruongVu.md`.
