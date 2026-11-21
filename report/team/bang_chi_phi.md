@@ -2,7 +2,7 @@
 
 Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` ghi nhãn `simulated`. Mỗi câu trả lời không quá ba dòng, có ít nhất một con số.
 
-> Người kiểm số (Vũ) đã tính độc lập toàn bộ bảng này bằng `src/kiem_so_vu.py`. Khi `mo_hinh` trong `src/lab13.py` chạy xong, đối chiếu lại: mọi số phải lệch không quá 2%.
+> **Đối chiếu:** người kiểm số (Vũ) tính độc lập toàn bộ bảng bằng `src/kiem_so_vu.py`, rồi so với output của `mo_hinh` trong `src/lab13.py` (Nam viết). Hai bản trùng nhau ở mọi dòng A1–A4, B1–B4 (lệch 0%), và trùng số chữa trong tài liệu hướng dẫn. Riêng B4 với 15,3 phút làm lại: nhóm ra 12.415 đ, tài liệu ghi 12.414 đ do làm tròn 15,3 trước khi nhân.
 
 ## A1 · Ba phép thử đáp án biết trước
 
