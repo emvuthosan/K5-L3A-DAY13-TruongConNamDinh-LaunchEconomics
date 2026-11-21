@@ -2,7 +2,7 @@
 
 Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các file hồ sơ; ở đây chỉ dẫn lại con số chính.
 
-> **Cần duyệt (xoá ghi chú này trước khi nộp).** **Vũ duyệt:** mọi con số ở mục 4 khớp `bang_chi_phi.md`, `chi_so.md` và output `lab13.py`. **Hoàng duyệt:** mục 5 (cách gộp vai) và điền hai dòng còn chờ ở mục 4 (đề xuất cuối, kết quả hội đồng).
+> **Cần duyệt (xoá ghi chú này trước khi nộp).** **Vũ đã duyệt:** mọi con số ở mục 4 khớp `bang_chi_phi.md`, `chi_so.md` và output `lab13.py`, trừ dòng tỉ lệ đồng thuận (C): phải sửa theo `bang_loi.md` sau khi khôi phục hai bộ nhãn độc lập. **Hoàng duyệt:** mục 5 (cách gộp vai) và điền hai dòng còn chờ ở mục 4 (đề xuất cuối, kết quả hội đồng).
 
 ## 1. Thông tin nhóm
 

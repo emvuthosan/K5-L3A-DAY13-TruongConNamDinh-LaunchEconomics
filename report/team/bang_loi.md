@@ -82,8 +82,8 @@ Ba ca không trùng: 13, 16, 17.
 
 Cách phát hiện phải đo được (event, ngưỡng, tần suất). Người phụ trách là một vai trò, không ghi "cả đội".
 
-> *Nháp, cần duyệt.* **Hoàng duyệt:** nội dung khắc phục, vai trò phụ trách và ngưỡng của từng dòng. **Vũ duyệt:** tên event và thuộc tính khớp danh sách event trong `chi_so.md`, ngưỡng có đo được từ event đó không.
-> Mỗi loại chọn một ca theo nhãn thống nhất. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` là event đề xuất thêm, Vũ bổ sung vào danh sách event nếu đồng ý.
+> *Nháp, cần duyệt.* **Hoàng duyệt:** nội dung khắc phục, vai trò phụ trách và ngưỡng của từng dòng. **Vũ đã duyệt:** cả 5 dòng dùng event có trong `chi_so.md` và ngưỡng đo được; đã thêm `input_validation_failed`, thuộc tính `request_id` cho `refund_ledger_write` (ca 20) và `chu_de` cho `refund_request_created` (ca 13).
+> Mỗi loại chọn một ca theo nhãn thống nhất. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` đã được thêm vào danh sách event.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
