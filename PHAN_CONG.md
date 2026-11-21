@@ -19,7 +19,7 @@ Lab được thiết kế cho 4 vai (người viết code, người kiểm số,
 | Mốc | Hoàng | Nam | Vũ |
 | --- | --- | --- | --- |
 | **14:00** · Cài đặt (10 phút) | Điền thông tin nhóm vào `TEAM.md`; mở sẵn khung `ho_so_launch_v0.md` | Cài venv, chạy thử `python lab13.py` | Cài venv trên máy mình (dùng để chạy kiểm tra trên máy khác lúc nộp) |
-| **14:10** · CP1 · A (40 + 3 phút) | Đọc đề, nhắc quy tắc (nhãn `simulated`, không dùng từ "production"); ghi mục 1 và 3 vào hồ sơ | Viết 3 hàm A1, qua đủ 3 phép thử (1,20 · 1,25 · 1,25); viết `mo_hinh` (A2); chạy theo loại (A3); cộng chi phí cố định (A4) | Tính tay ít nhất một con số để đối chiếu (ví dụ 274,7 đ/yêu cầu hoặc 4.472 đ); điền bảng A1–A4 vào `bang_chi_phi.md` |
+| **14:10** · CP1 · A (40 + 3 phút) | Đọc đề, nhắc quy tắc (nhãn `simulated`, không dùng từ cấm ở quy tắc 5 của README); ghi mục 1 và 3 vào hồ sơ | Viết 3 hàm A1, qua đủ 3 phép thử (1,20 · 1,25 · 1,25); viết `mo_hinh` (A2); chạy theo loại (A3); cộng chi phí cố định (A4) | Tính tay ít nhất một con số để đối chiếu (ví dụ 274,7 đ/yêu cầu hoặc 4.472 đ); điền bảng A1–A4 vào `bang_chi_phi.md` |
 | **14:53** · CP2 · B (25 + 2 phút) | Ghi mục 2 (ba yếu tố nhạy nhất) vào hồ sơ | Viết vòng lặp 9 kịch bản B1, cặp B2, giới hạn chạy B3, xem lại 100% B4 | Điền bảng B1–B4; kiểm tra "giảm một nửa = nửa mức tăng"; viết câu trả lời B3, B4 (≤ 3 dòng, có số) |
 | **15:20** · Giải lao | — | **Commit và push `src/lab13.py`** để chuyển cho Vũ | **Pull** `src/lab13.py` về máy mình |
 | **15:35** · CP3 · C (30 + 3 phút) | Gắn nhãn 20 ca **độc lập**, ngồi riêng, 8 phút | Gắn nhãn 20 ca **độc lập**, ngồi riêng, 8 phút | Làm nốt phần B nếu còn; bắt đầu viết hàm `co_mau` cho D1 |
@@ -27,7 +27,7 @@ Lab được thiết kế cho 4 vai (người viết code, người kiểm số,
 | **16:08** · CP4 · D (25 + 3 phút) | Chạy kiểm tra `yaml.safe_load` và lệnh tìm dấu `?`; ghi mục 6 vào hồ sơ | Điền `pilot_plan.yaml`: chú thích D1, D2, các trường, 3 luật dừng theo mẫu NẾU – TRONG – THÌ – KHÔNG THÌ | Code 5 câu D1 (1.251 · 3.103 · 1.000 · 300 · m ≥ 299); tính tỉ lệ `mo_lai_trong_7_ngay` (4,25%) và đưa số cho Nam |
 | **16:36** · CP5 · E (20 + 4 phút) | Hoàn thiện hồ sơ đủ 7 mục; viết dòng đề xuất cuối (Go / Go có điều kiện / No-go) | Viết bảng rủi ro kinh tế E2 (ít nhất 2 dòng, lấy số từ bảng độ nhạy) | Code 3 chỉ số E1; viết danh sách ít nhất 6 event có `trace_id` và phần kiểm tra chéo vào `chi_so.md` |
 | **17:00** · Duyệt chéo Gate 2a (45 phút) | Trình bày hồ sơ nhóm mình (1 phút trình + 1 phút trả lời) | Viết `phieu_cham.md` chấm nhóm n + 1 | Đối chiếu số trong hồ sơ nhóm bạn, chuẩn bị câu hỏi cho đội trình |
-| **17:45** · Đóng gói, nộp (15 phút) | Hoàn thiện `TEAM.md` (vai, đóng góp); chạy `python lab13.py` trên máy mình | Viết `group_report.md` | Chạy `grep -rni production report/team` và soát nhãn `simulated` lần cuối |
+| **17:45** · Đóng gói, nộp (15 phút) | Hoàn thiện `TEAM.md` (vai, đóng góp); chạy `python lab13.py` trên máy mình | Viết `group_report.md` | Chạy lệnh grep tìm từ cấm (quy tắc 5) trong `report/team` và soát nhãn `simulated` lần cuối |
 
 ## 3. Việc của từng người (checklist)
 
@@ -63,7 +63,7 @@ Lab được thiết kế cho 4 vai (người viết code, người kiểm số,
 - [ ] Tính tỉ lệ `mo_lai_trong_7_ngay` hiện tại, đưa cho Nam đặt luật an toàn
 - [ ] Code 3 chỉ số E1; điền bảng chỉ số, danh sách event (≥ 6, có `trace_id`) và phần kiểm tra chéo trong `chi_so.md`
 - [ ] Đối chiếu số trong hồ sơ nhóm bạn khi duyệt chéo
-- [ ] Soát cuối: không còn từ "production", mọi số giả lập có nhãn `simulated`
+- [ ] Soát cuối: không còn từ cấm ở quy tắc 5, mọi số giả lập có nhãn `simulated`
 
 ## 4. Việc chung của cả ba người
 
