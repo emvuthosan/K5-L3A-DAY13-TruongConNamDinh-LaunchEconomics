@@ -23,7 +23,7 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 
 **Một câu hỏi cho đội trình:** Chi phí cả hệ thống 5.865 đ/yêu cầu bằng bao nhiêu lần 12.000 đ, và đã cộng chi phí cố định 40 triệu đ/tháng chưa?
 
-**Câu trả lời của đội trình (ghi lại tại buổi):** ...
+**Câu trả lời của đội trình (ghi lại tại buổi):** Chi phí cả hệ thống 5.865 đ/yêu cầu ≈ 0,49 lần mức 12.000 đ/yêu cầu nếu nhân viên tự làm; con số này chưa cộng chi phí cố định 40 triệu đ/tháng. Chi phí cố định được tính riêng cho phạm vi pilot noi_dia + hang_nang: ở mức 45.000 yêu cầu/tháng, chi phí là 4.599 đ/việc thành công (simulated), đã gồm 1.185 đ chi phí cố định/việc. Hai số dùng phạm vi và mẫu số khác nhau, nên không cộng trực tiếp 1.185 đ vào 5.865 đ.
 
 ## Chuẩn bị trước khi chấm (nháp, không tính điểm)
 
