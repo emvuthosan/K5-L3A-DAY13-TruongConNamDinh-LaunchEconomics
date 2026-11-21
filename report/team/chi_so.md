@@ -20,16 +20,17 @@ Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý 
 
 | Event | Ai tạo | Thuộc tính chính | Thời điểm |
 | --- | --- | --- | --- |
-| `refund_request_created` | App khách | request_id, loai, so_tien, depot, staff_id, arm (can thiệp/đối chứng), trace_id | Khi khách gửi yêu cầu |
+| `refund_request_created` | App khách | request_id, loai, chu_de (phí vận chuyển, phí bảo hiểm…), so_tien, depot, staff_id, arm (can thiệp/đối chứng), trace_id | Khi khách gửi yêu cầu |
 | `agent_run_completed` | Agent | request_id, attempt, tokens_in, tokens_out, tool_calls, status, trace_id | Sau mỗi lần chạy, kể cả lần lỗi |
 | `agent_suggestion_shown` | Giao diện nhân viên | staff_id, so_tien_de_xuat, trace_id | Khi gợi ý hiện ra cho nhân viên |
 | `staff_review_decision` | Nhân viên | quyet_dinh (giu/sua/bo), phut_xem_lai (đo thật), staff_id, trace_id | Khi bấm gửi, sửa hoặc bỏ |
 | `staff_rework_completed` | Nhân viên | phut_lam_lai (đo thật), ly_do, trace_id | Khi làm lại xong |
 | `handoff_to_staff` | Agent | reason (thieu_du_lieu, het_lan_chay, ngoai_pham_vi…), tom_tat, trace_id | Khi chuyển yêu cầu cho nhân viên |
-| `refund_ledger_write` | Dịch vụ sổ cái | idempotency_key, so_tien, ket_qua (ok/loi), trace_id | Khi ghi sổ cái |
+| `refund_ledger_write` | Dịch vụ sổ cái | request_id, idempotency_key, so_tien, ket_qua (ok/loi), trace_id | Khi ghi sổ cái |
 | `ticket_closed` | Hệ thống ticket | closed_at, created_at, trace_id | Khi đóng yêu cầu |
 | `ticket_reopened` | Khách | reopened_at, reason, trace_id | Khi khách mở lại |
 | `audit_sample_checked` | Kế toán | so_tien_da_hoan, so_tien_dung, phien_ban_bang_gia, trace_id | Hằng tuần, mẫu 100 đơn |
+| `input_validation_failed` | App khách | truong (so_tai_khoan, ma_van_don…), ly_do, request_id, trace_id | Khi kiểm tra đầu vào của khách thất bại |
 
 **Kiểm tra chéo:** với mỗi chỉ số ở bảng E1, ghi event dùng để tính. Chỉ số nào không tính được từ danh sách event thì chưa đo được.
 
@@ -39,7 +40,8 @@ Viết "chỉ số trong đợt chạy thử là …", không viết "trợ lý 
 - **Dùng · nhóm tự đề xuất:** `agent_suggestion_shown` theo staff_id, chia `refund_request_created` có arm = can thiệp.
 - **An toàn · nhóm tự đề xuất:** `audit_sample_checked` có so_tien_da_hoan ≠ so_tien_dung, chia số đơn được kiểm tra.
 - **Chi phí mỗi việc thành công** (luật dừng chi phí trong pilot): token và tool từ `agent_run_completed`, phút xem lại và làm lại đo thật từ `staff_review_decision` và `staff_rework_completed`, thay cho hai cột simulated.
-- Cả năm chỉ số đều tính được từ danh sách event trên.
+- **Bảng khắc phục** trong `bang_loi.md`: ca 1 dùng `input_validation_failed`; ca 20 dùng `refund_ledger_write` (đếm request_id có từ 2 lần ket_qua = ok); ca 18 dùng `ticket_reopened` đối chiếu `audit_sample_checked`; ca 13 dùng `handoff_to_staff` có reason = ngoai_pham_vi chia `refund_request_created` có chu_de = phí bảo hiểm; ca 17 dùng `audit_sample_checked`.
+- Cả năm chỉ số và năm cách phát hiện lỗi đều tính được từ danh sách event trên.
 
 ## E2 · Rủi ro kinh tế
 

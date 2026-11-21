@@ -22,7 +22,7 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 
 ## Chuẩn bị trước khi chấm (nháp, không tính điểm)
 
-> **Cần duyệt.** **Vũ duyệt:** các số tham chiếu bên dưới (Vũ là người đối chiếu số hồ sơ nhóm bạn lúc duyệt chéo). **Hoàng duyệt:** checklist và câu hỏi gợi ý. Điểm, quyết định và lý do chỉ điền khi đã đọc hồ sơ nhóm được chấm.
+> **Cần duyệt.** **Vũ đã duyệt:** các số tham chiếu bên dưới khớp output `lab13.py` (Vũ là người đối chiếu số hồ sơ nhóm bạn lúc duyệt chéo). **Hoàng duyệt:** checklist và câu hỏi gợi ý. Điểm, quyết định và lý do chỉ điền khi đã đọc hồ sơ nhóm được chấm.
 
 Số tham chiếu là số của nhóm mình, tính bằng `src/lab13.py` (lệch ≤ 2% coi là khớp).
 
