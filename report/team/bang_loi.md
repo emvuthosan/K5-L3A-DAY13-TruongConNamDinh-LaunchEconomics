@@ -45,20 +45,20 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
-| 1 | Do người dùng | Hệ thống | Không | Do người dùng |
+| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 2 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 5 | Ngầm | Ngầm | Có | Ngầm |
-| 6 | Do người dùng | Ngữ cảnh | Không | Do người dùng |
+| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 8 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 9 | Do người dùng | Do người dùng | Có | Do người dùng |
-| 10 | Hệ thống | Ngữ cảnh | Không | Ngữ cảnh |
+| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Ngầm | Có | Ngầm |
-| 13 | Giới hạn hệ thống | Ngữ cảnh | Không | Giới hạn hệ thống |
-| 14 | Do người dùng | Ngữ cảnh | Không | Do người dùng |
+| 13 | Hệ thống | Ngữ cảnh | Không | Hệ thống |
+| 14 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 16 | Ngữ cảnh | Do người dùng | Không | Ngữ cảnh |
 | 17 | Ngầm | Hệ thống | Không | Ngầm |
@@ -66,41 +66,29 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 13 / 20 = 65% (dưới 80%, đã viết lại định nghĩa bên dưới)
+**Tỉ lệ đồng thuận:** 17 / 20 = 85% (từ 80% trở lên, không phải viết lại định nghĩa)
 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-Bảy ca không trùng: 1, 6, 10, 13, 14, 16, 17.
+Ba ca không trùng: 13, 16, 17.
 
-- **Ca 1** (Do người dùng / Hệ thống): lỗi lộ ra ở ngân hàng nhưng gốc là khách nhập thiếu số tài khoản; đầu vào của khách sai thì là Do người dùng, kể cả khi trợ lý thiếu bước kiểm tra.
-- **Ca 6** (Do người dùng / Ngữ cảnh): khách chọn sai mục là đầu vào sai; Ngữ cảnh chỉ dùng khi đầu vào đúng và trợ lý làm đúng thiết kế mà khách vẫn thấy sai.
-- **Ca 10** (Hệ thống / Ngữ cảnh): trợ lý từ chối đúng chính sách, không vi phạm thiết kế; khách thấy sai vì hoàn cảnh (ứng dụng hiện "cam kết 24 giờ") nên là Ngữ cảnh.
-- **Ca 13** (Giới hạn hệ thống / Ngữ cảnh): yêu cầu ngoài phạm vi trợ lý là Giới hạn hệ thống; việc trợ lý không nói rõ là chỗ cần sửa, không phải nguyên nhân gốc.
-- **Ca 14** (Do người dùng / Ngữ cảnh): khách bấm nhầm nút là thao tác sai của khách nên là Do người dùng.
+- **Ca 13** (Hệ thống / Ngữ cảnh): người 1 xét câu trả lời chung chung, người 2 xét việc khách thấy sai; nguyên nhân gốc là yêu cầu ngoài phạm vi trợ lý nên thống nhất Giới hạn hệ thống, còn việc không nói rõ là chỗ cần sửa.
 - **Ca 16** (Ngữ cảnh / Do người dùng): khách không nhập hay chọn gì sai; trợ lý làm đúng thiết kế "gửi ngay" nhưng không hợp hoàn cảnh (2 giờ sáng) nên là Ngữ cảnh.
 - **Ca 17** (Ngầm / Hệ thống): có sai so với bảng giá nhưng không khách nào mở lại, không cảnh báo nào kích; lỗi không ai nhận ra thì là Ngầm, kể cả khi nguyên nhân là lỗi hệ thống.
-
-**Định nghĩa viết lại (do đồng thuận dưới 80%), xét theo thứ tự, dừng ở câu đầu tiên đúng:**
-
-1. Không ai (khách, nhân viên, cảnh báo) nhận ra lúc xảy ra, chỉ lộ qua kiểm tra mẫu hoặc soát số → **Ngầm**.
-2. Đầu vào hoặc thao tác của khách sai (nhập sai, chọn sai mục, bấm nhầm) → **Do người dùng**.
-3. Yêu cầu nằm ngoài khả năng của trợ lý (thiếu dữ liệu, ngoài phạm vi, định dạng không xử lý được) → **Giới hạn hệ thống**.
-4. Trợ lý làm sai thiết kế hoặc chính sách và đã có người thấy → **Hệ thống**.
-5. Trợ lý làm đúng thiết kế, đúng chính sách nhưng khách vẫn thấy sai vì hoàn cảnh → **Ngữ cảnh**.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
 Cách phát hiện phải đo được (event, ngưỡng, tần suất). Người phụ trách là một vai trò, không ghi "cả đội".
 
 > *Nháp, cần duyệt.* **Hoàng duyệt:** nội dung khắc phục, vai trò phụ trách và ngưỡng của từng dòng. **Vũ duyệt:** tên event và thuộc tính khớp danh sách event trong `chi_so.md`, ngưỡng có đo được từ event đó không.
-> Ba cột cuối soạn theo định nghĩa từng loại, chưa gắn với ca nào. Sau khi thống nhất nhãn, chọn mỗi loại một ca, điền cột "Ca" và sửa nội dung cho khớp ca đã chọn. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` là event đề xuất thêm.
+> Mỗi loại chọn một ca theo nhãn thống nhất. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` là event đề xuất thêm, Vũ bổ sung vào danh sách event nếu đồng ý.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
-| ... | Do người dùng | Event `input_validation_failed` (trường sai định dạng, trace_id); tỉ lệ theo tuần, ngưỡng > 3% số yêu cầu | Kiểm tra định dạng ngay khi nhập, gợi ý cách sửa cụ thể và thêm bước xác nhận lại trước thao tác không đảo ngược được | Product designer luồng hoàn phí |
-| ... | Hệ thống | `staff_review_decision` = sửa, hoặc `refund_ledger_write` có ket_qua = loi; theo dõi hằng ngày, ngưỡng ≥ 1 ca sai tiền mỗi ngày | Sửa tham số tool hoặc luật chính sách, thêm ca kiểm thử hồi quy; chặn trả lời "thành công" khi bước ghi chưa xác nhận | Tech lead trợ lý hoàn phí |
-| ... | Ngữ cảnh | `ticket_reopened` có reason "khách hiểu khác kết quả" dù số tiền đúng; theo dõi hằng tuần, ngưỡng > 1% số yêu cầu đã đóng | Nêu rõ giả định và cách tính trong tin nhắn gửi khách; rà lại các mặc định của thiết kế với hoàn cảnh khách | PM trợ lý hoàn phí |
-| ... | Giới hạn hệ thống | `handoff_to_staff` theo reason (thieu_du_lieu, ngoai_pham_vi, dinh_dang); theo dõi hằng tuần, ngưỡng > 10% số yêu cầu | Nói rõ trợ lý không xử lý được, chuyển nhân viên kèm tóm tắt; mở rộng dữ liệu hoặc định dạng nếu tỉ lệ cao kéo dài | Trưởng nhóm CSKH |
-| ... | Ngầm | `audit_sample_checked` hằng tuần trên mẫu 100 đơn, ngưỡng > 1% đơn có `so_tien_da_hoan` khác `so_tien_dung` | Duy trì kiểm tra mẫu định kỳ; khi vượt ngưỡng, rà toàn bộ đơn cùng điều kiện và hoàn bù hoặc thu hồi | Kế toán trưởng |
+| 1 | Do người dùng | Event `input_validation_failed` (truong = so_tai_khoan, trace_id); tỉ lệ theo tuần, ngưỡng > 3% số yêu cầu | Kiểm tra độ dài và định dạng số tài khoản trước khi tạo lệnh hoàn; sai thì yêu cầu nhập lại và xác nhận 4 số cuối | Product designer luồng hoàn phí |
+| 20 | Hệ thống | `refund_ledger_write` có 2 lần ket_qua = ok cho cùng request_id; theo dõi hằng ngày, ngưỡng ≥ 1 ca (khớp luật dừng an toàn trong `pilot_plan.yaml`) | Đặt idempotency_key = request_id, từ chối lệnh ghi thứ hai; thêm ca kiểm thử hồi quy gửi lại yêu cầu sau 10 phút | Tech lead trợ lý hoàn phí |
+| 18 | Ngữ cảnh | `ticket_reopened` có reason "hoàn thiếu" trong khi số tiền đúng (khớp `audit_sample_checked`); theo dõi hằng tuần, ngưỡng > 1% số yêu cầu đã đóng | Tin nhắn gửi khách ghi kèm cách tính, ví dụ "Phí 30.000 đ × 50% (trễ 24–48 giờ) = 15.000 đ" | PM trợ lý hoàn phí |
+| 13 | Giới hạn hệ thống | Tỉ lệ yêu cầu về phí bảo hiểm kết thúc bằng `handoff_to_staff` có reason = ngoai_pham_vi; theo dõi hằng tuần, ngưỡng < 95% | Thêm bước nhận diện phạm vi: nói rõ "trợ lý không xử lý phí bảo hiểm của đối tác", chuyển nhân viên kèm tóm tắt | Trưởng nhóm CSKH |
+| 17 | Ngầm | `audit_sample_checked` có `phien_ban_bang_gia` khác bản hiện hành hoặc `so_tien_da_hoan` khác `so_tien_dung`; hằng tuần trên mẫu 100 đơn, ngưỡng > 1% | Xoá bộ nhớ đệm bảng giá mỗi khi đổi bảng giá; khi vượt ngưỡng, rà mọi đơn từ ngày đổi (ca này 212 đơn trong 9 ngày) và hoàn bù hoặc thu hồi | Kế toán trưởng |
