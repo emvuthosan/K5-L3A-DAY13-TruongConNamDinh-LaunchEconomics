@@ -45,34 +45,50 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
-| 1 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 1 | Do người dùng | Hệ thống | Không | Do người dùng |
 | 2 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 3 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 4 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 5 | Ngầm | Ngầm | Có | Ngầm |
-| 6 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 6 | Do người dùng | Ngữ cảnh | Không | Do người dùng |
 | 7 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 8 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 9 | Do người dùng | Do người dùng | Có | Do người dùng |
-| 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
+| 10 | Hệ thống | Ngữ cảnh | Không | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Ngầm | Có | Ngầm |
-| 13 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
-| 14 | Do người dùng | Do người dùng | Có | Do người dùng |
+| 13 | Giới hạn hệ thống | Ngữ cảnh | Không | Giới hạn hệ thống |
+| 14 | Do người dùng | Ngữ cảnh | Không | Do người dùng |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
-| 16 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
-| 17 | Ngầm | Ngầm | Có | Ngầm |
+| 16 | Ngữ cảnh | Do người dùng | Không | Ngữ cảnh |
+| 17 | Ngầm | Hệ thống | Không | Ngầm |
 | 18 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 20 / 20 = 100%
+**Tỉ lệ đồng thuận:** 13 / 20 = 65% (dưới 80%, đã viết lại định nghĩa bên dưới)
 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
-- Không có ca không trùng (20/20). Quy tắc ghi lại cho ca dễ lẫn nhất (ca 8): lỗi đã có người phát hiện khi xảy ra thì là Hệ thống; chỉ lộ ra qua kiểm tra mẫu thì là Ngầm.
+Bảy ca không trùng: 1, 6, 10, 13, 14, 16, 17.
+
+- **Ca 1** (Do người dùng / Hệ thống): lỗi lộ ra ở ngân hàng nhưng gốc là khách nhập thiếu số tài khoản; đầu vào của khách sai thì là Do người dùng, kể cả khi trợ lý thiếu bước kiểm tra.
+- **Ca 6** (Do người dùng / Ngữ cảnh): khách chọn sai mục là đầu vào sai; Ngữ cảnh chỉ dùng khi đầu vào đúng và trợ lý làm đúng thiết kế mà khách vẫn thấy sai.
+- **Ca 10** (Hệ thống / Ngữ cảnh): trợ lý từ chối đúng chính sách, không vi phạm thiết kế; khách thấy sai vì hoàn cảnh (ứng dụng hiện "cam kết 24 giờ") nên là Ngữ cảnh.
+- **Ca 13** (Giới hạn hệ thống / Ngữ cảnh): yêu cầu ngoài phạm vi trợ lý là Giới hạn hệ thống; việc trợ lý không nói rõ là chỗ cần sửa, không phải nguyên nhân gốc.
+- **Ca 14** (Do người dùng / Ngữ cảnh): khách bấm nhầm nút là thao tác sai của khách nên là Do người dùng.
+- **Ca 16** (Ngữ cảnh / Do người dùng): khách không nhập hay chọn gì sai; trợ lý làm đúng thiết kế "gửi ngay" nhưng không hợp hoàn cảnh (2 giờ sáng) nên là Ngữ cảnh.
+- **Ca 17** (Ngầm / Hệ thống): có sai so với bảng giá nhưng không khách nào mở lại, không cảnh báo nào kích; lỗi không ai nhận ra thì là Ngầm, kể cả khi nguyên nhân là lỗi hệ thống.
+
+**Định nghĩa viết lại (do đồng thuận dưới 80%), xét theo thứ tự, dừng ở câu đầu tiên đúng:**
+
+1. Không ai (khách, nhân viên, cảnh báo) nhận ra lúc xảy ra, chỉ lộ qua kiểm tra mẫu hoặc soát số → **Ngầm**.
+2. Đầu vào hoặc thao tác của khách sai (nhập sai, chọn sai mục, bấm nhầm) → **Do người dùng**.
+3. Yêu cầu nằm ngoài khả năng của trợ lý (thiếu dữ liệu, ngoài phạm vi, định dạng không xử lý được) → **Giới hạn hệ thống**.
+4. Trợ lý làm sai thiết kế hoặc chính sách và đã có người thấy → **Hệ thống**.
+5. Trợ lý làm đúng thiết kế, đúng chính sách nhưng khách vẫn thấy sai vì hoàn cảnh → **Ngữ cảnh**.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
