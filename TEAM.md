@@ -12,7 +12,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Đào Trường Vũ | 2A202603721 | 26ai.vudt@vinuni.edu.vn | emvuthosan | Người kiểm số (trước giải lao) · Người viết code (sau giải lao: D1, E1) |
-|   2 | Nguyễn Lê Hải Nam | 2A202603699 | | | Người viết code (trước giải lao: A, B) · Người gắn nhãn 2 |
+|   2 | Nguyễn Lê Hải Nam | 2A202603699 | 26ai.namnlh@vinuni.edu.vn | NguyenNam999-hash | Người viết code (trước giải lao: A, B) · Người gắn nhãn 2 |
 |   3 | Vũ Lê Hoàng | 2A202603542 | 26ai.hoangvl2@vinuni.edu.vn| hoangtukhoi | Người gắn nhãn 1 · kiêm giữ hồ sơ |
 
 Bốn vai của lab:
