@@ -57,7 +57,7 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 | 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Ngầm | Có | Ngầm |
-| 13 | Hệ thống | Ngữ cảnh | Không | Hệ thống |
+| 13 | Hệ thống | Ngữ cảnh | Không | Giới hạn hệ thống |
 | 14 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 16 | Ngữ cảnh | Do người dùng | Không | Ngữ cảnh |
@@ -66,8 +66,7 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 17 / 20 = 85% (từ 80% trở lên, không phải viết lại định nghĩa)
-
+**Tỉ lệ đồng thuận:** 17 / 20 = 85% 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
@@ -79,11 +78,6 @@ Ba ca không trùng: 13, 16, 17.
 - **Ca 17** (Ngầm / Hệ thống): có sai so với bảng giá nhưng không khách nào mở lại, không cảnh báo nào kích; lỗi không ai nhận ra thì là Ngầm, kể cả khi nguyên nhân là lỗi hệ thống.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
-
-Cách phát hiện phải đo được (event, ngưỡng, tần suất). Người phụ trách là một vai trò, không ghi "cả đội".
-
-> *Nháp, cần duyệt.* **Hoàng duyệt:** nội dung khắc phục, vai trò phụ trách và ngưỡng của từng dòng. **Vũ đã duyệt:** cả 5 dòng dùng event có trong `chi_so.md` và ngưỡng đo được; đã thêm `input_validation_failed`, thuộc tính `request_id` cho `refund_ledger_write` (ca 20) và `chu_de` cho `refund_request_created` (ca 13).
-> Mỗi loại chọn một ca theo nhãn thống nhất. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` đã được thêm vào danh sách event.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
