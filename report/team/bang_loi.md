@@ -66,8 +66,7 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 | 19 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 20 | Hệ thống | Hệ thống | Có | Hệ thống |
 
-**Tỉ lệ đồng thuận:** 17 / 20 = 85% (từ 80% trở lên, không phải viết lại định nghĩa)
-
+**Tỉ lệ đồng thuận:** 17 / 20 = 85% 
 ## Quy tắc phân biệt cho các ca không trùng
 
 Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
@@ -79,11 +78,6 @@ Ba ca không trùng: 13, 16, 17.
 - **Ca 17** (Ngầm / Hệ thống): có sai so với bảng giá nhưng không khách nào mở lại, không cảnh báo nào kích; lỗi không ai nhận ra thì là Ngầm, kể cả khi nguyên nhân là lỗi hệ thống.
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
-
-Cách phát hiện phải đo được (event, ngưỡng, tần suất). Người phụ trách là một vai trò, không ghi "cả đội".
-
-> *Nháp, cần duyệt.* **Hoàng duyệt:** nội dung khắc phục, vai trò phụ trách và ngưỡng của từng dòng. **Vũ duyệt:** tên event và thuộc tính khớp danh sách event trong `chi_so.md`, ngưỡng có đo được từ event đó không.
-> Mỗi loại chọn một ca theo nhãn thống nhất. Event lấy từ danh sách trong `chi_so.md`; `input_validation_failed` là event đề xuất thêm, Vũ bổ sung vào danh sách event nếu đồng ý.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
