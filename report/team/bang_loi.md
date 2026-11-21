@@ -57,7 +57,7 @@ Người gắn nhãn 1: Vũ Lê Hoàng · Người gắn nhãn 2: Nguyễn Lê H
 | 10 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 11 | Giới hạn hệ thống | Giới hạn hệ thống | Có | Giới hạn hệ thống |
 | 12 | Ngầm | Ngầm | Có | Ngầm |
-| 13 | Hệ thống | Ngữ cảnh | Không | Hệ thống |
+| 13 | Hệ thống | Ngữ cảnh | Không | Giới hạn hệ thống |
 | 14 | Ngữ cảnh | Ngữ cảnh | Có | Ngữ cảnh |
 | 15 | Hệ thống | Hệ thống | Có | Hệ thống |
 | 16 | Ngữ cảnh | Do người dùng | Không | Ngữ cảnh |
