@@ -5,7 +5,7 @@
 - Tên nhóm: truongconnamdinh
 - Lớp: L3A 
 - Repo nhóm: `K5-L3A-DAY13-TruongConNamDinh-LaunchEconomics` 
-- URL repo, nhánh nộp, commit chốt:
+- URL repo: https://github.com/emvuthosan/K5-L3A-DAY13-TruongConNamDinh-LaunchEconomics · Nhánh nộp: `main` · Commit chốt: (ghi khi push lần cuối)
 
 ## Thành viên
 
@@ -13,7 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Đào Trường Vũ | 2A202603721 | | | Người kiểm số (trước giải lao) · Người viết code (sau giải lao: D1, E1) |
 |   2 | Nguyễn Lê Hải Nam | 2A202603699 | | | Người viết code (trước giải lao: A, B) · Người gắn nhãn 2 |
-|   3 | Vũ Lê Hoàng | 2A202603542 | | | Người gắn nhãn 1 · kiêm giữ hồ sơ |
+|   3 | Vũ Lê Hoàng | 2A202603542 | 26ai.hoangvl2@vinuni.edu.vn| hoangtukhoi | Người gắn nhãn 1 · kiêm giữ hồ sơ |
 
 Bốn vai của lab:
 
@@ -44,11 +44,16 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Đóng góp cụ thể
 
--
+- Điền `TEAM.md`: vai sau khi gộp cho nhóm 3 người.
+- `bang_loi.md`: chép 20 ca lỗi, gắn nhãn người 1, merge nhãn người 2 của Nam, đếm số ca lệch, viết quy tắc phân biệt; thống nhất nhãn ca 13 là Giới hạn hệ thống cho khớp quy tắc và bảng khắc phục.
+- `ho_so_launch_v0.md`: điền bảy mục từ output `lab13.py`, `pilot_plan.yaml`, `chi_so.md`, `bang_loi.md`; chốt đề xuất **Go có điều kiện** với bốn điều kiện có người phụ trách và ngày kiểm tra, nêu cả con số bất lợi.
+- `group_report.md`: đối chiếu số ở mục 4 với output `lab13.py`, điền đề xuất cuối, duyệt mục 5.
+- Soát cuối: `yaml.safe_load` đọc được `pilot_plan.yaml`, không còn dấu `?`; không có từ cấm ở quy tắc 5; `python lab13.py` chạy hết.
 
 ### Bằng chứng
 
--
+- Nhánh `hoang-2a202603542`: commit `04d7205`, `97dfc01`, `80f1fed`, `3505e5f`, `2cac438` và commit điền `TEAM.md`, `group_report.md`.
+- Báo cáo cá nhân: `report/team/2A202603542_VuLeHoang.md`.
 
 ## NguyenLeHaiNam-2A202603699
 
