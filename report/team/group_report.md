@@ -2,8 +2,6 @@
 
 Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các file hồ sơ; ở đây chỉ dẫn lại con số chính.
 
-> **Còn chờ (xoá ghi chú này trước khi nộp):** điền kết quả duyệt chéo ở mục 4 sau buổi 17:00. Hoàng đã đối chiếu các số ở mục 4 với output `lab13.py` (khớp) và duyệt mục 5.
-
 ## 1. Thông tin nhóm
 
 - Tên nhóm: TruongConNamDinh
