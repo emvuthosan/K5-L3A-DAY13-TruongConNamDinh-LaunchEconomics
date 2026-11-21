@@ -4,8 +4,8 @@
 
 - Họ tên: Đào Trường Vũ
 - MSSV: 2A202603721
-- Email:
-- Vai trong nhóm: người kiểm số (trước giải lao), người viết code (sau giải lao: D1, E1). Nhóm 3 người nên gộp vai, xem `PHAN_CONG.md`.
+- Email: 26ai.vudt@vinuni.edu.vn
+- Vai trong nhóm: người kiểm số (trước giải lao), người viết code (sau giải lao: D1, E1). Nhóm 3 người nên phân công gộp vai, chi tiết trong file `PHAN_CONG.md`.
 
 ## 2. Phần việc phụ trách
 
@@ -29,7 +29,7 @@
 
 ## 5. Công cụ AI đã dùng
 
-- **Claude Code (Anthropic):** dùng để đọc đề và chia việc cho nhóm (`PHAN_CONG.md`), viết `src/kiem_so_vu.py`, phần D1/E1 trong `src/lab13.py`, điền `bang_chi_phi.md` và phần E1/event của `chi_so.md`, gộp xung đột khi merge.
+- **Claude Code (Anthropic):** dùng để đọc đề và chia việc cho nhóm (`PHAN_CONG.md`), hỗ trợ viết `src/kiem_so_vu.py`, phần D1/E1 trong `src/lab13.py`, điền `bang_chi_phi.md` và phần E1/event của `chi_so.md`, gộp xung đột khi merge.
 - **Cách tự kiểm tra:**
   - Chạy `kiem_so_vu.py` và `lab13.py` và so từng dòng giữa hai bản, rồi so với số chữa trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (lệch ≤ 2%).
   - Kiểm tra quy tắc "giảm một nửa = nửa mức tăng" ở B1 (5,6 → 2,8; 40,7 → 20,3; 51,8 → 25,9).
