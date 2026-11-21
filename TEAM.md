@@ -73,20 +73,6 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Phần việc phụ trách
 
-- Kiểm số và điền `report/team/bang_chi_phi.md`; viết code D1, E1 trong `src/lab13.py`; `report/team/chi_so.md`
-
-### Đóng góp cụ thể
-
--
-
-### Bằng chứng
-
--
-
-## DaoTruongVu-2A202603721
-
-### Phần việc phụ trách
-
 - Người kiểm số trước giải lao (A, B); người viết code sau giải lao (D1, E1 trong `src/lab13.py`); `report/team/bang_chi_phi.md`, `report/team/chi_so.md` (E1, event, kiểm tra chéo); soát cuối nhãn `simulated` và từ cấm ở quy tắc 5.
 
 ### Đóng góp cụ thể
