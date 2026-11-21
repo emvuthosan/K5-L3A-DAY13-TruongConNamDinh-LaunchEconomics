@@ -2,19 +2,18 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A hoặc L3B
-- Repo nhóm: `K5-L3A-DAY13-TenNhom-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
+- Tên nhóm: truongconnamdinh
+- Lớp: L3A 
+- Repo nhóm: `K5-L3A-DAY13-TruongConNamDinh-LaunchEconomics` 
 - URL repo, nhánh nộp, commit chốt:
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Đào Trường Vũ | 2A202603721 |       |        |         |
-|   2 | Nguyễn Lê Hải Nam | 2A202603699 |       |        |         |
-|   3 | Vũ Lê Hoàng | 2A202603542 |       |        |         |
-|   4 |        |      |       |        |         |
+|   1 | Đào Trường Vũ | 2A202603721 | | | Người kiểm số (trước giải lao) · Người viết code (sau giải lao: D1, E1) |
+|   2 | Nguyễn Lê Hải Nam | 2A202603699 | | | Người viết code (trước giải lao: A, B) · Người gắn nhãn 2 |
+|   3 | Vũ Lê Hoàng | 2A202603542 | | | Người gắn nhãn 1 · kiêm giữ hồ sơ |
 
 Bốn vai của lab:
 
@@ -37,11 +36,11 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Sao chép mục dưới đây cho từng thành viên.
 
-## HoVaTen-MSSV
+## VuLeHoang-2A202603542
 
 ### Phần việc phụ trách
 
--
+- Người gắn nhãn 1 (CP3), giữ hồ sơ `report/team/ho_so_launch_v0.md`, `report/team/bang_loi.md`, `TEAM.md`
 
 ### Đóng góp cụ thể
 
@@ -49,5 +48,32 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Bằng chứng
 
+-
+
+## NguyenLeHaiNam-2A202603699
+
+### Phần việc phụ trách
+
+- Viết code A, B trong `src/lab13.py`; người gắn nhãn 2 (CP3); `report/team/pilot_plan.yaml`, `report/team/group_report.md`, `report/team/phieu_cham.md`
+
+### Đóng góp cụ thể
+
+-
+
+### Bằng chứng
+
+-
+
+## DaoTruongVu-2A202603721
+
+### Phần việc phụ trách
+
+- Kiểm số và điền `report/team/bang_chi_phi.md`; viết code D1, E1 trong `src/lab13.py`; `report/team/chi_so.md`
+
+### Đóng góp cụ thể
+
+-
+
+### Bằng chứng
 
 -
