@@ -2,7 +2,7 @@
 
 Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các file hồ sơ; ở đây chỉ dẫn lại con số chính.
 
-> **Cần duyệt (xoá ghi chú này trước khi nộp).** **Vũ duyệt:** mọi con số ở mục 4 khớp `bang_chi_phi.md`, `chi_so.md` và output `lab13.py`. **Hoàng duyệt:** mục 5 (cách gộp vai) và điền ba dòng còn chờ ở mục 4 (đồng thuận, đề xuất cuối, kết quả hội đồng).
+> **Cần duyệt (xoá ghi chú này trước khi nộp).** **Vũ duyệt:** mọi con số ở mục 4 khớp `bang_chi_phi.md`, `chi_so.md` và output `lab13.py`. **Hoàng duyệt:** mục 5 (cách gộp vai) và điền hai dòng còn chờ ở mục 4 (đề xuất cuối, kết quả hội đồng).
 
 ## 1. Thông tin nhóm
 
@@ -18,7 +18,7 @@ Dựng hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN để hội đồng 
 
 - **A · Chi phí mỗi việc thành công** ([bang_chi_phi.md](bang_chi_phi.md)): hàm `mo_hinh` cộng token + tool trên mọi lần chạy (kể cả lần lỗi) và phút xem lại, làm lại; chia cho số yêu cầu `thanh_cong`. Gọi lại theo từng `loai` (A3) và cộng chi phí cố định 40 triệu đ/tháng cho phạm vi noi_dia + hang_nang (A4).
 - **B · Độ nhạy** ([bang_chi_phi.md](bang_chi_phi.md)): gọi lại `mo_hinh` với 9 kịch bản đổi một yếu tố, một cặp, giới hạn 1/2/3 lần chạy (cộng 12.000 đ cho mỗi yêu cầu không thành công để ra chi phí cả hệ thống) và xem lại 100%.
-- **C · Bảng lỗi** ([bang_loi.md](bang_loi.md)) *(chờ CP3)*: hai người gắn nhãn (Hoàng, Nam) sẽ gắn độc lập 20 ca theo năm loại của Google PAIR, so nhãn, rồi chọn 5 ca điền cách khắc phục.
+- **C · Bảng lỗi** ([bang_loi.md](bang_loi.md)): Hoàng và Nam gắn nhãn độc lập 20 ca theo năm loại của Google PAIR, đồng thuận 17/20 = 85%; ghi quy tắc phân biệt cho 3 ca lệch (13, 16, 17). Bảng khắc phục chọn mỗi loại một ca (1, 20, 18, 13, 17), mỗi dòng có event, ngưỡng và một vai trò phụ trách.
 - **D · Pilot** ([pilot_plan.yaml](pilot_plan.yaml)): tính cỡ mẫu cho ba cách chia trước khi chọn (`nhiem_vu_d1` trong `lab13.py`); chọn chia theo nhân viên 20 + 20, chấp nhận mức chênh 6 điểm; ba luật dừng NẾU – TRONG – THÌ – KHÔNG THÌ.
 - **E · Chỉ số và hồ sơ** ([chi_so.md](chi_so.md), [ho_so_launch_v0.md](ho_so_launch_v0.md)): ba chỉ số tính thử bằng `nhiem_vu_e1` trong `lab13.py`, hai chỉ số tự đề xuất, 10 event có `trace_id` kèm kiểm tra chéo, ba dòng rủi ro kinh tế lấy số từ bảng độ nhạy. Hồ sơ launch *(chờ người giữ hồ sơ)*.
 
@@ -30,7 +30,7 @@ Dựng hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN để hội đồng 
 - Ba yếu tố nhạy nhất: số ca làm lại (+51,8% khi gấp đôi), tỉ lệ xem lại (+40,7%), lương nhân viên (+23,1% khi tăng 25%) [simulated]. Giới hạn 2 lần chạy rẻ nhất cho công ty (6.901.220 đ), khác giới hạn có chi phí mỗi việc thành công thấp nhất (1 lần). Xem lại 100% cho 11.743 đ = 0,98× [simulated].
 - Pilot: không cách chia theo cụm nào đủ mẫu cho 5 điểm với 40 nhân viên; chọn 20 + 20 nhân viên, mde 6 điểm (m ≥ 299, DE 6,96); power chỉ 0,64 nếu tác động thật là 5 điểm.
 - Chỉ số trong đợt chạy thử (không có đối chứng, nên chưa nói được tác động của trợ lý): chỉ số chính 82,83% (994/1.200); bỏ qua gợi ý 27,12% (48/177); mở lại trong 7 ngày 4,25% (51/1.200), trong phạm vi noi_dia + hang_nang 3,97%.
-- Tỉ lệ đồng thuận gắn nhãn (C): *(chờ CP3)*.
+- Tỉ lệ đồng thuận gắn nhãn (C): 17/20 = 85% (≥ 80%); ba ca lệch 13, 16, 17.
 - Đề xuất cuối của `ho_so_launch_v0.md`: *(chờ người giữ hồ sơ chốt)*.
 - Kết quả duyệt chéo nhóm nhận được từ hội đồng: *(chờ buổi duyệt chéo 17:00)*.
 
